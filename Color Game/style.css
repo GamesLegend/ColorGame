@@ -1,0 +1,264 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  height: 100vh;
+}
+
+.main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1.8rem;
+  text-align: center;
+}
+
+.main-header {
+  font-size: 4.8rem;
+  margin-bottom: 8rem;
+  background-color: #222;
+  color: #f5f5f5;
+  padding: 2rem;
+  font-weight: 900;
+}
+
+.btn--container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 2rem 3.6rem;
+  border-radius: 9999rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.active {
+  box-shadow: 0 0px 10px 4px #dee2e6;
+}
+
+.color {
+  background: linear-gradient(to right bottom, #fff, #fff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.reset--colors {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem !important;
+  background-color: red;
+}
+
+.red--yellow:link,
+.red--yellow:visited {
+  background: linear-gradient(to right bottom, #f03e3e, #f08c00);
+}
+
+.red--yellow:hover,
+.red--yellow:active {
+  background: linear-gradient(
+    to right bottom,
+    rgba(240, 62, 62, 0.85),
+    rgba(240, 140, 0, 0.85)
+  );
+}
+
+.teal--cyan:link,
+.teal--cyan:visited {
+  background: linear-gradient(to right bottom, #20c997, #22b8cf);
+}
+.teal--cyan:hover,
+.teal--cyan:active {
+  background: linear-gradient(
+    to right bottom,
+    hsla(162, 73%, 46%, 0.85),
+    hsla(188, 72%, 47%, 0.85)
+  );
+}
+
+.grape--pink:link,
+.grape--pink:visited {
+  background: linear-gradient(to right bottom, #be4bdb, #f783ac);
+}
+.grape--pink:hover,
+.grape--pink:active {
+  background: linear-gradient(
+    to right bottom,
+    hsla(288, 67%, 58%, 0.85),
+    hsla(339, 88%, 74%, 0.85)
+  );
+}
+
+.black--grey:link,
+.black--grey:visited {
+  background: linear-gradient(to right bottom, #495057, #ced4da);
+}
+.black--grey:hover,
+.black--grey:active {
+  background: linear-gradient(
+    to right bottom,
+    hsla(210, 9%, 31%, 0.85),
+    hsla(210, 14%, 83%, 0.85)
+  );
+}
+
+.green--cyan:link,
+.green--cyan:visited {
+  background: linear-gradient(to right bottom, #37b24d, #3bc9db);
+}
+.green--cyan:hover,
+.green--cyan:active {
+  background: linear-gradient(
+    to right bottom,
+    hsla(131, 53%, 46%, 0.85) hsla(187, 69%, 55%, 0.85)
+  );
+}
+
+.yellow--lime:link,
+.yellow--lime:visited {
+  background: linear-gradient(to right bottom, #f59f00, #a9e34b);
+}
+.yellow--lime:hover,
+.yellow--lime:active {
+  background: linear-gradient(
+    to right bottom,
+    hsla(39, 100%, 48%, 0.85) hsla(83, 73%, 59%, 0.85)
+  );
+}
+
+.blue--indigo:link,
+.blue--indigo:visited {
+  background: linear-gradient(to right bottom, #339af0, #91a7ff);
+}
+.blue--indigo:hover,
+.blue--indigo:active {
+  background: linear-gradient(
+    to right bottom,
+    hsla(207, 86%, 57%, 0.85) hsla(228, 100%, 78%, 0.85)
+  );
+}
+
+.grape--violet:link,
+.grape--violet:visited {
+  background: linear-gradient(to right bottom, #e599f7, #845ef7);
+}
+.grape--violet:hover,
+.grape--violet:active {
+  background: linear-gradient(
+    to right bottom,
+    hsla(289, 85%, 78%, 0.85) hsla(255, 91%, 67%, 0.85)
+  );
+}
+
+.red--pink:link,
+.red--pink:visited {
+  background: linear-gradient(to right bottom, #fa5252, #e64980);
+}
+.red--pink:hover,
+.red--pink:active {
+  background: linear-gradient(
+    to right bottom,
+    hsla(0, 94%, 65%, 0.85) hsla(339, 76%, 59%, 0.85)
+  );
+}
+
+.lime--green:link,
+.lime--green:visited {
+  background: linear-gradient(to right bottom, #94d82d, #51cf66);
+}
+.lime--green:hover,
+.lime--green:active {
+  background: linear-gradient(
+    to right bottom,
+    hsla(84, 69%, 51%, 0.85) hsla(130, 57%, 56%, 0.85)
+  );
+}
+
+.yellow--green:link,
+.yellow--green:visited {
+  background: linear-gradient(to right bottom, #fab005, #40c057);
+}
+.yellow--green:hover,
+.yellow--green:active {
+  background: linear-gradient(
+    to right bottom,
+    hsla(42, 96%, 50%, 0.85) hsla(131, 50%, 50%, 0.85)
+  );
+}
+
+.violet--teal:link,
+.violet--teal:visited {
+  background: linear-gradient(to right bottom, #7950f2, #12b886);
+}
+.violet--teal:hover,
+.violet--teal:active {
+  background: linear-gradient(
+    to right bottom,
+    hsla(255, 86%, 63%, 0.85) hsla(162, 82%, 40%, 0.85)
+  );
+}
+
+@media (max-width: 54.375em) {
+  .main-header {
+    font-size: 3.6rem;
+    margin-bottom: 7rem;
+  }
+}
+
+@media (max-width: 43.75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .main-header {
+    font-size: 2.7rem;
+  }
+
+  .btn--container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.4rem;
+  }
+}
+
+@media (max-width: 29.375em) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-header {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .btn--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-header {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    padding: 1.6rem;
+  }
+}
